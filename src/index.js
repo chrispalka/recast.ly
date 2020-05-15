@@ -6,7 +6,7 @@ import App from './components/App.js';
 
 
 // call ReactDOM.render, passing in App
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App searchYouTube={() => {}} />, document.getElementById('app'));
 
 // RenderVideo List
 // ReactDOM.render(<VideoList videos={exampleVideoData}/>, document.getElementById('videoList'));
