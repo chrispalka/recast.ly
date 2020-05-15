@@ -13,12 +13,12 @@ class App extends React.Component {
   }
 
   // On mouseClick
-  onClick() {
-    console.log('click!');
-    this.setState({
-      currentVideo: videos[this]
-    });
-  }
+  // onClick = (value) => {
+  //   console.log('click!');
+  //   this.setState({
+  //     currentVideo: value
+  //   });
+  // };
 
   //Render
   render() {
@@ -34,7 +34,7 @@ class App extends React.Component {
             <div><h5><em>videoPlayer</em><VideoPlayer video={this.state.currentVideo} /></h5></div>
           </div>
           <div className="col-md-5">
-            <div><h5><em>videoList</em><VideoList videos={this.state.videos} onClick={this.onClick.bind(this)} /></h5></div>
+            <div><h5><em>videoList</em><VideoList videos={this.state.videos} callBack={(video) => this.setState({currentVideo: video})} /></h5></div>
           </div>
         </div>
       </div>
