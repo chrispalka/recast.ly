@@ -1,9 +1,9 @@
 import VideoListEntry from '../components/VideoListEntry.js';
 
-var VideoList = (props, callback) => (
+var VideoList = (props) => (
   <div className="video-list">
     {props.videos.map((video, index) =>
-      <VideoListEntry video={video} key={index} callback={callback} />
+      <VideoListEntry video={video} key={index} onClick={props.onClick} />
     )}
   </div>
 );
