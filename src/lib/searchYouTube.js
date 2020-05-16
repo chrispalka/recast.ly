@@ -16,14 +16,13 @@ var searchYouTube = (options, callback) => {
     },
     contentType: 'application/json',
     success: function(data) {
-      console.log('success!: ', data);
-      console.log('and here is example video data: ', exampleVideoData);
+      console.log('success!');
+      callback(data.items);
     },
     error: function(response) {
       console.log('Request Failed');
     }
   });
-  callback();
 };
 
 export default searchYouTube;

@@ -1,8 +1,8 @@
 // TODO: Render the `App` component to the DOM
 // Import List
 import App from './components/App.js';
-// import VideoList from './components/VideoList.js';
-// import exampleVideoData from './data/exampleVideoData.js';
+import searchYouTube from './lib/searchYouTube.js';
+
 
 
 // call ReactDOM.render, passing in App

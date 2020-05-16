@@ -1,7 +1,7 @@
 import VideoList from '../components/VideoList.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 import VideoPlayer from '../components/VideoPlayer.js';
-import searchYouTube from '../lib/searchYouTube.js';
+// import searchYouTube from '../lib/searchYouTube.js';
 
 
 
@@ -14,9 +14,12 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    
+  }
+
   // On mouseClick
   onClick(video) {
-    console.log('click!');
     this.setState({
       currentVideo: video
     });
