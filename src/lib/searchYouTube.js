@@ -16,7 +16,8 @@ var searchYouTube = (options, callback) => {
     },
     contentType: 'application/json',
     success: function(data) {
-      console.log('success!');
+      console.log('success!: ', data.items);
+      console.log('exampleVideoData: ', exampleVideoData);
       callback(data.items);
     },
     error: function(response) {
