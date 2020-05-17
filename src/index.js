@@ -6,13 +6,7 @@ import searchYouTube from './lib/searchYouTube.js';
 
 
 // call ReactDOM.render, passing in App
-ReactDOM.render(<App searchYouTube={() => {}} />, document.getElementById('app'));
+ReactDOM.render(<App searchYouTube={searchYouTube} />, document.getElementById('app'));
 
-// RenderVideo List
-// ReactDOM.render(<VideoList videos={exampleVideoData}/>, document.getElementById('videoList'));
-
-// <VideoList videoListItems = {[exampleVideoData[0], 1, 2, 3]} />,
-//[...VideoList] = [10, 20, 30, 40, 50];
-//output: [30, 40, 50];
 
 

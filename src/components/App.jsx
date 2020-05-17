@@ -3,7 +3,7 @@ import exampleVideoData from '../data/exampleVideoData.js';
 import VideoPlayer from '../components/VideoPlayer.js';
 import YOUTUBE_API_KEY from '../config/youtube.js';
 import Search from '../components/Search.js';
-// import searchYouTube from '../lib/searchYouTube.js';
+
 
 
 
@@ -38,21 +38,6 @@ class App extends React.Component {
       });
     });
   }
-
-  /*
-  var options = {
-      key: YOUTUBE_API_KEY,
-      query: query,
-      max: 5
-    };
-    this.props.searchYouTube(options, (videos) => {
-      console.log('inside searchYouTube ' + videos[0]);
-      this.setState({
-        videos: videos,
-        currentVideo: videos[0]
-      });
-    });
-  */
 
   // On mouseClick
   onClick(video) {
